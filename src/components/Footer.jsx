@@ -1,9 +1,14 @@
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 
 const Footer = () => {
+
+  const {theme} = useContext(ThemeContext)
+
   return (
     <footer className="footer">
-      <p>Theme: Light</p>
+      <p>Theme: {theme === "light" ? "Light" : "Dark"}</p>
     </footer>
   );
 };
