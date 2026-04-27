@@ -31,3 +31,6 @@ start components:
 
 install:
     npm i
+
+install react router:
+    npm i react-router
